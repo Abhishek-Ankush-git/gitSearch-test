@@ -1,14 +1,11 @@
 # GitSearch
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.3.
+This is a test project with option to search git repository with a search textbox. The textbox also provides a typeahead for users guidance. 
+On search user will see a list of repositories matching the search. click on name to navigate to the repository. Click on avatar to go to user's profile. It will show a tooltip with the name of the git author.
 
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
 ## Build
 

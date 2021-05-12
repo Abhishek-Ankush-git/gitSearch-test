@@ -1,0 +1,84 @@
+:host {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 14px;
+  color: #333;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.toolbar {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  background-color: #1976d2;
+  color: white;
+  font-weight: 600;
+  margin-bottom: 1em;
+  span{
+    padding-left: 25px;
+  }
+}
+
+
+.ng-valid[required],
+.ng-valid.required {
+  border-left: 5px solid #42A948;
+  /* green */
+}
+
+.ng-invalid:not(form) {
+  border-left: 5px solid #a94442;
+  /* red */
+}
+
+.form-group {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  #search {
+    padding: 0 .5em 0 .5em;
+    height: 3em;
+    font-size: 1em;
+    width: 50%;
+    align-items: center;
+    font-family: centrale-sans-book;
+    border-style: solid;
+    border-radius: .125em;
+  }
+}
+
+.repo-card {
+  max-width: 98%;
+  margin: 10px;
+}
+
+.card-title {
+  cursor: pointer;
+}
+
+.card-header {
+  width: max-content;
+
+  .avatar {
+    height: 50px;
+    width: 50px;
+    padding: 10px;
+    float: left;
+    cursor: pointer;
+  }
+
+  .tooltip-class {
+    position: relative;
+  }
+}
+
+.example-viewport {
+  height: 85%;
+  width: 100%;
+  border: none;
+}
+
+.example-item {
+  height: 50px;
+}
