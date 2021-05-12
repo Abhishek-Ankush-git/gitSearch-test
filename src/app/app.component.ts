@@ -17,6 +17,7 @@ export class AppComponent implements OnInit {
   searchText: string;
   searchResults: IRepoDetails[] = [];
   autocomplete: IRepoDetails[] = [];
+  isSearched = false;
   private searchDecouncer: Subject<string> = new Subject();
   debouncedInputValue: string;
 
@@ -50,6 +51,7 @@ export class AppComponent implements OnInit {
 
   searchGitRepo(): void {
     if (this.searchText && this.searchText !== '') {
+      this.isSearched = true;
       this._http.get(`https://api.github.com/search/repositories?q=${this.searchText}`, { responseType: 'json' }).subscribe(
         (response: IResponse) => {
           this.searchResults = response.items;

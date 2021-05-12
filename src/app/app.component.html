@@ -40,4 +40,5 @@
       </mat-card-content>
     </mat-card>
   </div>
+  <div *ngIf="searchResults.length=== 0 && isSearched" class="form-group"><strong>No repositories found for the search creteria!!</strong></div>
 </cdk-virtual-scroll-viewport>
